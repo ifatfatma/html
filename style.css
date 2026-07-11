@@ -12,29 +12,23 @@ html {
 body {
     background-color: #bad9f4; 
     color: #333; 
+    font-size: 14px;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 nav {
     background-color: rgb(245, 247, 250);
-    padding: 10px 20px; 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-   
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-nav h2 { 
-    color: #120e1e; 
-    text-align: center;
-    width: 100%;
-    padding: 20px 0;
-}
-
-@media (max-width: 768px)
 
 nav ul {
-    list-style: none; 
-    display: flex; 
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -47,13 +41,30 @@ nav ul li a {
     font-weight: bold;
     font-size: 21px;
     padding: 8px 20px;
-    border-radius: 4px; 
-    transition: 0.3s; 
+    border-radius: 4px;
+    transition: 0.3s;
 }
 
-nav ul li a.active, nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
     background-color: rgb(40, 91, 142);
-    color: white; 
+    color: white;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
 }
 
 img {
@@ -80,3 +91,39 @@ footer {
     align-items: center; 
     justify-content: center; 
 }
+
+.bookinghere{}
+.bookinghere .input{
+    font-size: 14px; 
+    padding: 5px;
+    width: 200px;
+    border-radius: 3px;
+    border-color: #333;
+    color: blue;
+
+} 
+.bookinghere .select{
+    font-size: 14px; 
+    padding: 5px;
+    width: 200px;
+    border-radius: 3px;
+    border-color: #333;
+    color: blue;
+
+} 
+.bookinghere .button{
+    background-color: black;
+    color: #ffffff;
+    padding:5px ;
+    border-radius: 3px;
+    cursor: pointer;
+
+
+}
+.bookinghere .button:hover{
+    background-color: #333;
+}
+.dt{
+    font-weight: 500;
+}
+
